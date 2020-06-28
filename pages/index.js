@@ -1,4 +1,4 @@
-import { Form, Select, InputNumber, Switch, Slider, Button } from 'antd'
+import { Form, Select, InputNumber, Switch, Slider, Button, Carousel, Space} from 'antd'
 
 // Custom DatePicker that uses Day.js instead of Moment.js
 import DatePicker from '../components/DatePicker'
@@ -17,6 +17,7 @@ const content = {
 export default function Home() {
   return (
     <div style={content}>
+      <h1 className="site-heading">Aniruddha Patil</h1>
       <div className="text-center mb-5">
         <Link href="#">
           <a className="logo mr-0">
@@ -42,7 +43,20 @@ export default function Home() {
               name="inputNumber"
             />
           </FormItem>
-
+          <Carousel>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+          </Carousel>
           <FormItem
             label="Switch"
             labelCol={{ span: 8 }}
